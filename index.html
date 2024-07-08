@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TensorFlow.js Image Classification</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TensorFlow.js Image Classification</h1>
+        <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+        <div id="uploadedImageContainer">
+            <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+        </div>
+        <button onclick="classifyImage()">Classify Image</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
